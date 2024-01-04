@@ -1,7 +1,9 @@
+@import "navbar";
+
 $color1: pink;
 $color2: white;
-$w1: 800px;
-$w2: $w1 / 3;
+$w1: 500px;
+$w2: $w1 / 2;
 
 html {
     font: {
@@ -14,11 +16,11 @@ body {
     background-color: $color1;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     
     main {
         background-color: $color2;
-        width: $w1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,13 +34,16 @@ body {
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
+            width: $w1;
         }
 
         img {
             width: $w2;
             aspect-ratio: 1/1;
-            object-fit: cover;
-            object-position: 0% 0%;
+            object: {
+                fit: cover;
+                position: 0% 0%;
+            }
             border-radius: 10%;
         }
     

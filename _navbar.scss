@@ -1,0 +1,24 @@
+header {
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+        margin: 0 30px;
+        a {
+            text-decoration: none;
+            color: pink;
+        }
+        a:hover {
+            color: white;
+        }
+    }
+}    
+}
+

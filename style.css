@@ -1,3 +1,25 @@
+header {
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+header ul li {
+  margin: 0 30px;
+}
+header ul li a {
+  text-decoration: none;
+  color: pink;
+}
+header ul li a:hover {
+  color: white;
+}
+
 html {
   font-family: Tahoma, sans-serif;
   font-size: 20px;
@@ -7,11 +29,11 @@ body {
   background-color: pink;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 body main {
   background-color: white;
-  width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,9 +47,10 @@ body main h1 {
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
+  width: 500px;
 }
 body main img {
-  width: 266.6666666667px;
+  width: 250px;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
