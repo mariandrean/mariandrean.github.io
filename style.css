@@ -26,16 +26,14 @@ html {
 }
 
 body {
-  background-color: pink;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background-color: pink;
 }
 body main {
-  background-color: white;
   display: flex;
   flex-direction: column;
+  background-color: white;
   align-items: center;
   padding: 10px;
   border-radius: 10px;

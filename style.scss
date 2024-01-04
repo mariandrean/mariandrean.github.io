@@ -1,4 +1,9 @@
 @import "navbar";
+@mixin flexStyle($color) {
+    display: flex;
+    flex-direction: column;
+    background-color: $color;
+}
 
 $color1: pink;
 $color2: white;
@@ -12,17 +17,11 @@ html {
     }
 }
 
-body {
-    background-color: $color1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+body {;
+    @include flexStyle($color1);
+
     main {
-        background-color: $color2;
-        display: flex;
-        flex-direction: column;
+        @include flexStyle($color2);
         align-items: center;
         padding: 10px;
         border-radius: 10px;
