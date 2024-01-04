@@ -6,15 +6,37 @@ html {
 body {
   background-color: pink;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-body h1 {
-  color: pink;
+body main {
   background-color: white;
-  font-size: 2rem;
-  padding: 30px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
 }
-body h2 {
+body main h1 {
   color: white;
+  background-color: pink;
+  font-size: 2rem;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+body main img {
+  width: 266.6666666667px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+  border-radius: 10%;
+}
+body main h2 {
+  color: pink;
   font-size: 1rem;
   font-weight: 500;
   font-style: italic;

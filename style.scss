@@ -1,5 +1,7 @@
 $color1: pink;
 $color2: white;
+$w1: 800px;
+$w2: $w1 / 3;
 
 html {
     font: {
@@ -11,21 +13,42 @@ html {
 body {
     background-color: $color1;
     text-align: center;
-
-    h1 {
-        color: $color1;
+    display: flex;
+    justify-content: center;
+    
+    main {
         background-color: $color2;
-        font-size: 2rem;
-        padding: 30px;
-    }
+        width: $w1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        
+        h1 {
+            color: $color2;
+            background-color: $color1;
+            font-size: 2rem;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
 
-    h2 {
-        color: $color2;
-        font: {
-            size: 1rem;
-            weight: 500;
-            style: italic;
+        img {
+            width: $w2;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: 0% 0%;
+            border-radius: 10%;
+        }
+    
+        h2 {
+            color: $color1;
+            font: {
+                size: 1rem;
+                weight: 500;
+                style: italic;
+            }
         }
     }
 }
-
