@@ -1,0 +1,20 @@
+html {
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: pink;
+  text-align: center;
+}
+body h1 {
+  color: pink;
+  background-color: white;
+  font-size: 2rem;
+  padding: 30px;
+}
+body h2 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
